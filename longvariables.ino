@@ -6,9 +6,9 @@ long a = 0;
 
 void setup()
 {
-Serial.begin(9600);
-Serial.println("This program will prompt you to enter a number, which is your base, then enter a second number, which will raise the base to that number.");
-delay(500);
+  Serial.begin(9600);
+  Serial.println("This program will prompt you to enter a number, which is your base, then enter a second number, which will raise the base to that number.");
+  delay(500);
 }
 
 void loop()
@@ -38,10 +38,10 @@ void loop()
     exponent = exponent + a;
     delay(5);
   }
-  
-result = pow(base, exponent);
+  // result 
+  result = pow(base, exponent);
 
-  // final result
+  // print result of inputs
   Serial.print(base);
   Serial.print(" to the power of ");
   Serial.print(exponent);
